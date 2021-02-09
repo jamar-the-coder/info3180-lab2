@@ -1,0 +1,35 @@
+{% extends 'base.html' %} 
+
+{% block main %}
+	<div class="profile-card">
+	<div class="adjust">	
+		<img class="profile-photo" src="{{url_for('static', filename='alphachad.jpg')}}"/>
+		<p class="profile-name">Jamar Lee</p>
+		<p>@younginnocennttt</p>
+		<p>St. Catherine, Jamaica</p>
+		<p>Date Joined: {{joined}}</p>
+	</div>
+	
+	<p class="profile-description">I am a good guy. I am one of the nicest persons you could meet. Some people think
+	that I am mean but you should actually come up, talk to me and find out. You never know what
+	can happen. Live a little dangerously sometimes, y'know?</p>
+	
+	<div class="profile-stats">
+		<div class="profile-stats-item">
+			<div class="profile-stats-title">7</div>
+			<div class="profile-stats-text">Posts</div>
+		</div>
+		
+		<div class="profile-stats-item">
+			<div class="profile-stats-title">100</div>
+			<div class="profile-stats-text">Following</div>
+		</div>
+		
+		<div class="profile-stats-item">
+			<div class="profile-stats-title">200</div>
+			<div class="profile-stats-text">Followers</div>
+		</div>
+	</div>
+	<div class="horizontal-centre"><button type="button">Follow</button></div>
+	</div>
+	{% endblock %}
